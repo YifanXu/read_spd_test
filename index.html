@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+    <head>
+        <title>Speed test</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="lines.js"></script>
+		<script src="script.js"></script>
+    </head>
+    <body>
+		<div class="mainDiv">
+			<div>
+				<h2>Read Speed Test</h2>
+				<div id="prompts">
+					<p>
+						<span>This is a survey designed to gauge the speed in which users read IM messages of various lengths. </span>
+						<span>You will read through a sample group chat conversation between a few characters. </span>
+						<span>Read through the conversation in a pace that is most comfortable for you. </span>
+					</p>
+					<p>
+						<span>Click on the box below to display the first message. </span> 
+						<span>When you are done reading a message and are ready for the next message, click on the box again to display the next one. </span>
+						<span>Continue until you see "Complete!" below the box. </span>
+					</p>
+					<p>
+						<span>Click the copy button when you are done to copy the data collected, and submit the contents of the clipboard.</span>
+					</p>
+				</div>
+				<div>
+					<button id="copybutton" onclick="copyResult()">Copy results</button>
+					<button id="resetbutton" onclick="reset()">Reset</button>
+					<button id="resetbutton" onclick="togglePrompts()">Toggle Prompt</button>
+				</div>
+			</div>
+			<div id="chatboxedge" onclick="getNext()">
+				<div id="chatbox">
+				</div>
+				<div id="completeOverlay">
+					<div>Complete!!</div>
+				</div>
+			</div>
+			<div class="postchat">
+				<hr/>
+				<p>Thanks for participating!</p>
+			</div>
+		</div>
+    </body>
+</html>

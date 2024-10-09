@@ -1,0 +1,75 @@
+body {
+	margin: 0px;
+}
+
+.mainDiv {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.mainDiv > div {
+	padding: 8px;
+}
+
+#chatboxedge {
+	border: 1px solid black;
+	margin: 0px 10vw;
+	flex-grow: 1;
+	overflow-y: scroll;
+	position: relative;
+}
+
+#chatbox {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+}
+
+.chatmessage {
+	margin-left: 5px;
+	margin-right: 20vw;
+}
+
+.chatspeaker {
+	color: gray;
+}
+
+.chatcontent {
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 0.5rem;
+}
+
+.chatmessage:first-child {
+	margin-top: 1rem;
+}
+
+.chatmessage:last-child {
+	margin-bottom: 1rem;
+}
+
+#completeOverlay.hidden {
+	display: none;
+}
+
+#completeOverlay {
+	background-color: rgba(200, 255, 200, 0.8);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#completeOverlay > div {
+	font-size: xx-large;
+	text-align: center;
+}

@@ -53,11 +53,15 @@ var lines = [
 	},
 	{
 	  "speaker": "Zaniel",
-	  "content": "The life and death stakes are for you, now that you've threatened me this way. I will find your identity."
+	  "content": "Don't mess with me."
 	},
 	{
 	  "speaker": "UNKNOWN",
-	  "content": "Will I? I look forward to it."
+	  "content": "Ooh~ scary"
+	},
+	{
+	  "speaker": "Zaniel",
+	  "content": "I'll find you."
 	},
 	{
 	  "speaker": "Jorn",
@@ -137,7 +141,15 @@ var lines = [
 	},
 	{
 	  "speaker": "Benji",
-	  "content": "I did. We were"
+	  "content": "I did."
+	},
+	{
+	  "speaker": "Jorn",
+	  "content": "... Care to elaborate?"
+	},
+	{
+	  "speaker": "Benji",
+	  "content": "No thx"
 	},
 	{
 	  "speaker": "Jorn",
@@ -162,6 +174,10 @@ var lines = [
 	{
 	  "speaker": "Zaniel",
 	  "content": "I offered her more opportunities to succeed than she would have at the Guild, and she gladly took it."
+	},
+	{
+	  "speaker": "Jorn",
+	  "content": "I see..."
 	},
 	{
 	  "speaker": "Benji",
@@ -239,4 +255,4 @@ var lines = [
 	  "speaker": "UNKNOWN",
 	  "content": ";>"
 	}
-]
+  ]
